@@ -7,7 +7,7 @@ module.exports = Schema({
         type: [{
             description: {type:String,required:true},
             duration:{type:Number,required:true},
-            date: {type:Date, default: ()=>new Date.now()}
+            date: {type:String, default: ()=>new Date.now().toDateString()}
         }],
         default: []
     }
